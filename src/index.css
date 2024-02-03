@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mobileview {
+        @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-[#00141B] bg-cover bg-center max-lg:bg-[url(./assets/images/navbg.png)] top-0 max-md:text-black max-lg:items-center max-lg:justify-center max-lg:min-h-screen max-lg:z-40
+    }
+}
