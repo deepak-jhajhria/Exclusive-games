@@ -1,5 +1,5 @@
 import img from '../assets/images/sevensec.webp'
-import { SevenSecIcon1, SevenSecIcon2, SevenSecIcon3 } from './Icons'
+import { Ellipse, SevenSecIcon1, SevenSecIcon2, SevenSecIcon3 } from './Icons'
 
 const Seven = () => {
     const data = [
@@ -8,8 +8,8 @@ const Seven = () => {
         { id: 3, svg: (<SevenSecIcon3 />), number: "200", para: "Divisas Disponibles" }
     ]
     return (
-        <div>
-            <div className="container max-w-[1140px] pb-5">
+        <div className='relative'>
+            <div className="container max-w-[1140px] pb-5 relative z-30">
                 <div className="grid items-center xl:pt-20 xl:grid-cols-2 gap-9">
                     <div className='order-2 xl:order-1'>
                         <img className='w-full rounded-2xl' src={img} alt="image casino" />
@@ -33,6 +33,8 @@ const Seven = () => {
                     </div>
                 </div>
             </div>
+            <Ellipse cstm="-top-[49%] left-0 !w-[15%]" />
+            <Ellipse cstm="top-[9%] right-0 !w-[15%]" />
         </div>
     )
 }

@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import Hogar from "./pages/Hogar"
 import Mision from "./pages/Mision"
 import Traga from "./pages/Traga"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/mision" element={<Mision />} />
         <Route path="/traga" element={<Traga />} />
       </Routes>
+      <Footer />
       <ScrollToTop />
     </div>
   )

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import { FacebookIcon, InstaIcon, Logo, MailIcon, TelIcon, TwitterIcon } from "./Icons"
+import { Ellipse, FacebookIcon, InstaIcon, Logo, MailIcon, TelIcon, TwitterIcon } from "./Icons"
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-black">
-            <div className="container max-w-[1140px] pt-10 sm:pt-12 md:pt-16 mb-8 mt-10 sm:mt-16 md:mt-24 lg:mt-[150px]">
+        <footer className="relative w-full overflow-hidden bg-black  mt-10 sm:mt-16 md:mt-24 lg:mt-[150px]">
+            <div className="container max-w-[1140px] pt-10 sm:pt-12 md:pt-16 mb-8 relative z-30">
                 <div className="grid justify-between w-full grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-9">
                     <div className="flex flex-col col-span-1 mb-5 mr-2 xs:col-span-2 md:col-span-3 md:mb-7 xl:mb-0">
                         <span><Logo /></span>
@@ -37,6 +37,8 @@ const Footer = () => {
                 </div>
             </div>
             <p className="py-3 text-base font-medium leading-6 text-center text-white border-t border-white opacity-50 sm:py-5 font-Inter border-opacity-30">© Juegos exclusivos - Todos los derechos reservados {(new Date().getFullYear())}</p>
+            <Ellipse cstm="-bottom-[50%] -left-[22%]" />
+            <Ellipse cstm="bottom-[15%] -right-[1%] !max-w-[180px] !min-h-[180px] !opacity-90" />
         </footer>
     )
 }

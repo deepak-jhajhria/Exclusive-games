@@ -1,5 +1,5 @@
 import jackpotimg from '../assets/images/jackpot.webp';
-import { BtnSvg, CheckIcon } from './Icons';
+import { BtnSvg, CheckIcon, Ellipse } from './Icons';
 import img1 from '../assets/images/jackpo2.webp'
 import img2 from '../assets/images/jackpo3.webp'
 import img3 from '../assets/images/jackpo4.webp'
@@ -13,7 +13,7 @@ const Jackpot = () => {
         { id: 3, img: img3, title: "Innovación", },
     ]
     return (
-        <div className='bg-[url(./assets/images/sec4bg.webp)] bg-cover w-full bg-center bg-no-repeat'>
+        <div className='bg-[url(./assets/images/sec4bg.webp)] bg-cover w-full bg-center bg-no-repeat relative'>
             <div className="container max-w-[1140px] -mt-[330px] xs:-mt-[300px] sm:-mt-28 md:-mt-20 xl:mt-[90px]">
                 <div className="grid items-center grid-cols-1 gap-5 xl:gap-10 xl:grid-cols-2">
                     <div className='order-2 xl:order-1'><img className='w-full sm:px-5' src={jackpotimg} alt="jackpot" /></div>
@@ -51,6 +51,8 @@ const Jackpot = () => {
                     </div>
                 </div>
             </div>
+            <Ellipse cstm="-top-[29%] left-0 !w-[15%]" />
+            <Ellipse cstm="-bottom-[10%] right-0 !w-[10%]" />
         </div>
     )
 }

@@ -6,6 +6,7 @@ import img4 from '../assets/images/slot4img.webp'
 import img5 from '../assets/images/slot5img.webp'
 import img6 from '../assets/images/slot6img.webp'
 import CommonBtn from "./CommonBtn"
+import { useEffect, useState } from "react"
 const Slots = () => {
     const slotsDataSecond = [
         { id: 1, img: img1, title: "Inteligencia", },
@@ -15,8 +16,34 @@ const Slots = () => {
         { id: 5, img: img5, title: "Innovación", },
         { id: 6, img: img6, title: "Innovación", },
     ]
+    const [isOpen, setIsOpen] = useState(false);
+    const [cart, setCart] = useState([]);
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+
+        }
+    }, [isOpen]);
+
+    const addToCart = (el) => {
+        let AddItems = true
+        if (AddItems) {
+            setCart([...cart, el]);
+            setIsOpen(true);
+        }
+        else {
+        }
+    };
+    const removeToCart = (el) => {
+        setIsOpen(false);
+        let items = [...cart]
+        items = items.filter(cartItem => cartItem.id !== el.id)
+        setCart(items)
+    };
     return (
-        <div className="bg-no-repeat bg-[url(./assets/images/sec3bg.webp)] w-full bg-cover pt-16 xs:pt-28 sm:pt-36 md:pt-48 lg:pt-[243px] overflow-hidden">
+        <div className="bg-no-repeat bg-[url(./assets/images/sec3bg.webp)] w-full bg-cover pt-16 xs:pt-28 sm:pt-36 md:pt-48 lg:pt-[243px] overflow-hidden relative z-30">
             <div className="container flex flex-col max-w-[1140px]">
                 <h2 className='text-3xl sm:text-4xl md:text-5xl font-normal font-Anton leading-[57px] text-[#00141B] text-center'>Nuestros Atributos de Marca</h2>
                 <div className="grid justify-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-5 sm:mt-10 lg:mt-[60px] relative gap-6 sm:gap-8 xl:gap-0">
@@ -50,11 +77,11 @@ const Slots = () => {
                 <p className="text-[#00141B] font-Inter font-medium text-sm sm:text-base opacity-80 leading-[26px] text-center mt-3 md:mt-4 max-w-[904px] mx-auto">En Exclusive Games, ofrecemos una selección de más de 600 juegos de los principales desarrolladores, como Aristocrat, Amatic, EGT, Novomatic, IGT, Playtech, Igrosoft y Tom Horn. Nuestro equipo trabaja incansablemente para innovar y ampliar nuestra oferta de experiencias, garantizando la máxima seguridad con operaciones protegidas por cifrado SSL de 256 bits.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 md:mt-12 lg:mt-[60px] relative gap-5 lg:gap-6">
                     {
-                        slotsDataSecond.map((listing, index) => (
+                        slotsDataSecond.map((el, index) => (
                             <div key={index} className="relative flex flex-col items-center w-full duration-300 group">
-                                <img className="rounded-lg w-full xs:w-[70%] sm:w-full" src={listing.img} alt={listing.title} />
+                                <img className="rounded-lg w-full xs:w-[70%] sm:w-full" src={el.img} alt={el.title} />
                                 <div className="absolute flex items-center justify-center w-full h-full duration-300 bg-black rounded-lg opacity-0 group-hover:opacity-100 bg-opacity-70">
-                                    <div className="relative"><CommonBtn text="Jugar" />
+                                    <div onClick={() => addToCart(el)} className="relative"><CommonBtn text="Jugar" />
                                         <span className="absolute -left-1 -bottom-1"><BtnSvg /></span>
                                     </div>
                                 </div>
@@ -66,6 +93,22 @@ const Slots = () => {
                     <span className="absolute -left-1 -bottom-1"><BtnSvg2 /></span>
                 </div>
             </div>
+            {isOpen && (<div className="fixed z-50 -translate-x-1/2 w-full -translate-y-1/2 bg-white shadow-2xl lg:max-w-[400px] top-1/2 left-1/2 sm:max-w-[350px] max-w-[300px] rounded-lg min-h-[300px] sm:min-h-[400px]">{
+                cart.map((el) => (
+                    <div key={el.id} className='flex flex-col justify-between w-full h-full px-3 py-4'>
+                        <div className="flex justify-center"><img className=' rounded-2xl' src={el.img} alt="cart-items" /></div>
+                        <div className='flex items-center justify-between'>
+                            <div onClick={() => removeToCart(el)} className="relative mx-auto mt-5 mb-5 sm:mt-7 md:mt-10 sm:mb-0"><CommonBtn cstm="bg-gradient-to-br to-[#51C8EF] from-[#7AF57A] !border-[0px] !text-black" text="Close" />
+                                <span className="absolute -left-1 -bottom-1"><BtnSvg2 /></span>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }</div>)}
+            {isOpen && (
+                <div className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-[30]'>
+                </div>
+            )}
         </div>
     )
 }

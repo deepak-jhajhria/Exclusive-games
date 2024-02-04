@@ -4,7 +4,7 @@ import { BtnSvg2 } from './Icons'
 
 const Casino = () => {
     return (
-        <div className='bg-no-repeat bg-[url(./assets/images/sec5bg.png)] bg-cover bg-center py-32 sm:py-40 md:py-44 lg:py-[220px]'>
+        <div className='bg-no-repeat bg-[url(./assets/images/sec5bg.png)] bg-cover bg-center py-32 sm:py-40 md:py-44 lg:py-[220px] relative z-30'>
             <div className="container max-w-[1140px] pb-5">
                 <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 xl:gap-[56px] lg:py-10 xl:py-20">
                     <div className='flex flex-col'>

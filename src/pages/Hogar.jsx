@@ -3,10 +3,10 @@ import PokerSec from "../components/PokerSec"
 
 const Hogar = () => {
     return (
-        <div>
+        <>
             <Header />
             <PokerSec />
-        </div>
+        </>
     )
 }
 

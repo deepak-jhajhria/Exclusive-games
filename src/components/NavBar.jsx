@@ -58,20 +58,20 @@ const NavBar = () => {
           <div className="relative hidden sm:block"><CommonBtn text="Acceso" />
             <span className="absolute -left-1 -bottom-1"><BtnSvg /></span>
           </div>
-          <div className='relative z-50 -mr-2 lg:hidden'>
+          <div className='relative z-[110] -mr-2 lg:hidden'>
             <Hamburger toggled={isOpen} toggle={setOpen} size={35} rounded distance="md" direction='right' duration={0.5} color='#FFF' />
           </div>
         </div>
       </div>
-      {isOpen && (
-        <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-30'>
-        </div>
-      )}
       <div id='scroll' class="fixed top-[77px] md:top-[82px] w-full z-10 hidden">
         <div class="h-[6px]  sm:h-2 w-full">
           <div class=" bg-gradient-to-r from-[#74EE8B] to-[#5CD4CF] rounded-r-full h-[5px] sm:h-[7px] w-0" id="progressBar"></div>
         </div>
       </div>
+      {isOpen && (
+        <div onClick={() => setOpen(false)} className='w-full bg-[rgba(0,0,0,0.78)] flex h-full fixed top-0 left-0 z-[30]'>
+        </div>
+      )}
     </nav>
   )
 }

@@ -797,3 +797,8 @@ export const AddIcon = () => {
         </svg>
     )
 }
+export const Ellipse = (props) => {
+    return (
+        <span className={`absolute w-full max-w-[484px] min-h-[484px] bg-gradient-to-r from-[#51C8EF] to-[#7AF57A] opacity-50 blur-[138px] rounded-full z-0 max-sm:hidden  ${props.cstm}`}></span>
+    )
+}
