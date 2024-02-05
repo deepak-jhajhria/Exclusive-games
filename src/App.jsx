@@ -12,7 +12,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once:true,
+  });
   }, [])
   const [screenLoading, setScreenLoading] = useState(false);
   useEffect(() => {
