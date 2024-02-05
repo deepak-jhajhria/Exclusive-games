@@ -27,6 +27,7 @@ const PokerSec = () => {
             </div>
             <Ellipse cstm="top-[3%] left-[-25%]" />
             <Ellipse cstm="-bottom-[29%] right-0 !w-[10%]" />
+            <Ellipse cstm="!max-w-[162px] !min-h-[162px] !blur-[65px] right-[40%] top-[28%]" />
         </div>
     )
 }

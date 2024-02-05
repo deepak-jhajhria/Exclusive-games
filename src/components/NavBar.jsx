@@ -63,9 +63,9 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div id='scroll' class="fixed top-[77px] md:top-[82px] w-full z-10 hidden">
-        <div class="h-[6px]  sm:h-2 w-full">
-          <div class=" bg-gradient-to-r from-[#74EE8B] to-[#5CD4CF] rounded-r-full h-[5px] sm:h-[7px] w-0" id="progressBar"></div>
+      <div id='scroll' className="fixed top-[77px] md:top-[82px] w-full z-10 hidden">
+        <div className="h-[6px]  sm:h-2 w-full">
+          <div className=" bg-gradient-to-r from-[#74EE8B] to-[#5CD4CF] rounded-r-full h-[5px] sm:h-[7px] w-0" id="progressBar"></div>
         </div>
       </div>
       {isOpen && (
