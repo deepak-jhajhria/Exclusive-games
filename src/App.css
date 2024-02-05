@@ -1,14 +1,10 @@
 .Btn:hover {
     background: linear-gradient(306.99deg, #7AF57A -13.72%, #51C8EF 102.02%);
     box-shadow: 0 0 20px 1px #72EC90;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .Btn:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
@@ -23,10 +19,6 @@
     opacity: 0;
     background: #fff;
     box-shadow: 0 0 50px 12px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
     transform: skewX(-20deg);
 }
 
@@ -46,23 +38,28 @@
     }
 }
 
-.Btn:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
-}
+.Btn:active { box-shadow: 0 0 0 0 transparent; transition: box-shadow 0.2s ease-in;}
+* { scrollbar-width: unset !important;}
+*::-webkit-scrollbar { height: 0; width: 0;}
+.backToTop::before { content: "Back To Top" !important;}
+.loader::before,
+.loader::after { animation: rotate9 1s infinite cubic-bezier(0.77, 0, 0.175, 1);}
+.loader::after {animation-delay: .5s;}
+@keyframes rotate9 {
+    0%,
+    100% {
+        left: 50px;
+    }
 
-* {
-    scrollbar-width: unset !important;
-    scrollbar-color: unset;
-}
+    25% {
+        transform: scale(.3);
+    }
 
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-}
-.backToTop::before {
-    content: "Back To Top" !important;
+    50% {
+        left: 0;
+    }
+
+    75% {
+        transform: scale(1);
+    }
 }

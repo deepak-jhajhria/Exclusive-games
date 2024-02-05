@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AddIcon, MinusIcon } from "./Icons";
+import { AddIcon, Ellipse, MinusIcon } from "./Icons";
 const Accordion = () => {
     const [open, setOpen] = useState(0);
     const toggleAccordion = (index) => {
@@ -14,7 +14,7 @@ const Accordion = () => {
         { id: 6, title: "¿Puedo probar sus juegos antes de comprometerme?", content: "En Exclusive Games, ofrecemos experiencias únicas y personalizadas, respaldadas por más de 15 años de dedicación al desarrollo de multiplataformas para juegos de azar." },
     ];
     return (
-        <div>
+        <div className="relative ">
             <div className="container max-w-[970px] mt-10 sm:mt-16 md:mt-24 lg:mt-[150px]">
                 <h2 className='text-white font-Anton font-normal text-center leading-8 md:leading-[69px] text-3xl sm:text-4xl md:text-5xl uppercase'>Preguntas más frecuentes</h2>
                 <div className="my-6 sm:my-10 lg:my-[60px]">
@@ -29,6 +29,7 @@ const Accordion = () => {
                     }
                 </div>
             </div>
+            <Ellipse cstm="-left-[30%] -top-[27%]" />
         </div>
     )
 }

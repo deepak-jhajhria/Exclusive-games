@@ -10,7 +10,7 @@ const Seven = () => {
     return (
         <div className='relative'>
             <div className="container max-w-[1140px] pb-5 relative z-30">
-                <div className="grid items-center xl:pt-20 xl:grid-cols-2 gap-9">
+                <div className="grid items-center xl:pt-[92px] xl:grid-cols-2 gap-9">
                     <div className='order-2 xl:order-1'>
                         <img className='w-full rounded-2xl' src={img} alt="image casino" />
                     </div>

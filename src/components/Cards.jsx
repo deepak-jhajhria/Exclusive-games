@@ -13,7 +13,7 @@ const Cards = () => {
                 <Luxury />
                 <Platinum />
             </div>
-            <Ellipse cstm="top-[49%] left-0 !w-[15%]" />
+            <Ellipse cstm="top-[64%] left-0 !w-[15%]" />
         </div>
     )
 }

@@ -14,10 +14,10 @@ const Jackpot = () => {
     ]
     return (
         <div className='bg-[url(./assets/images/sec4bg.webp)] bg-cover w-full bg-center bg-no-repeat relative'>
-            <div className="container max-w-[1140px] -mt-[330px] xs:-mt-[300px] sm:-mt-28 md:-mt-20 xl:mt-[90px]">
-                <div className="grid items-center grid-cols-1 gap-5 xl:gap-10 xl:grid-cols-2">
-                    <div className='order-2 xl:order-1'><img className='w-full sm:px-5' src={jackpotimg} alt="jackpot" /></div>
-                    <div className='flex flex-col order-1 xl:order-2'>
+            <div className="container max-w-[1140px] -mt-[330px] xs:-mt-[300px] sm:-mt-28 md:-mt-20 xl:mt-[110px]">
+                <div className="grid items-center grid-cols-1 gap-5 xl:gap-7 xl:grid-cols-2">
+                    <div className='order-2 xl:order-1'><img className='w-full sm:px-5 xl:px-0' src={jackpotimg} alt="jackpot" /></div>
+                    <div className='flex flex-col order-1 xl:order-2 xl:ml-3'>
                         <h2 className='text-3xl sm:text-4xl md:text-5xl font-normal font-Anton md:leading-[57px] text-white'>Potenciando sus elecciones</h2>
                         <p className='mt-3 text-sm font-medium leading-6 text-white sm:text-base sm:mt-4 opacity-80 font-Inter'>Con Exclusive Game lo mejor está de tu lado.</p>
                         <p className='flex items-center gap-2 mt-3 text-sm font-medium text-white sm:mt-6 sm:text-base font-Inter opacity-80'><span><CheckIcon /></span>Tecnología HTML5</p>

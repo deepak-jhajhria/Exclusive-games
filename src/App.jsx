@@ -6,21 +6,33 @@ import Hogar from "./pages/Hogar"
 import Mision from "./pages/Mision"
 import Traga from "./pages/Traga"
 import Footer from "./components/Footer"
+import { useEffect, useState } from "react"
+import Preloder from "./components/Prelodar"
 
 function App() {
-
+  const [screenLoading, setScreenLoading] = useState(false);
+  useEffect(() => {
+    setScreenLoading(true);
+    document.body.classList.add("overflow-hidden")
+    setTimeout(() => {
+      setScreenLoading(false);
+      document.body.classList.remove("overflow-hidden")
+    }, 3500);
+  }, []);
   return (
-    <div className="bg-[#00141B]">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/hogar" element={<Hogar />} />
-        <Route path="/mision" element={<Mision />} />
-        <Route path="/traga" element={<Traga />} />
-      </Routes>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <>
+      {screenLoading ? (<Preloder />) : (<div className="bg-[#00141B]">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/hogar" element={<Hogar />} />
+          <Route path="/mision" element={<Mision />} />
+          <Route path="/traga" element={<Traga />} />
+        </Routes>
+        <Footer />
+        <ScrollToTop />
+      </div>)}
+    </>
   )
 }
 

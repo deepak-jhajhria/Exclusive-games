@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import CommonBtn from "./CommonBtn"
 import { BtnSvg, Logo } from "./Icons"
 import { Sling as Hamburger } from 'hamburger-react'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -41,7 +41,7 @@ const NavBar = () => {
     }
   }
   return (
-    <nav id="nav" className="backdrop:blur-xl bg-[rgba(255,255,255,0.10)] w-full z-40 top-0 left-1/2">
+    <nav id="nav" className={`backdrop:blur-xl bg-[rgba(255,255,255,0.10)] navbar w-full z-40 top-0 left-1/2`}>
       <div id="navbar" className="container flex items-center justify-between py-5 max-w-[1140px] relative z-40">
         <Link to={"/"}><span><Logo /></span></Link>
         <ul className={`${isOpen ? "right-0" : "-right-full"} flex items-center lg:-ml-12 gap-7 mobileview`}>

@@ -72,9 +72,9 @@ const Slots = () => {
                     <span className="absolute top-[50px] right-[19%] hidden xl:block"><SlotArrow2 /></span>
                 </div>
             </div>
-            <div className="container flex flex-col max-w-[1140px] mt-10 sm:mt-16 md:mt-24 lg:mt-[150px] pb-[430px] sm:pb-72 md:pb-[243px]">
+            <div className="container flex flex-col max-w-[1140px] mt-10 sm:mt-16 md:mt-24 lg:mt-[160px] pb-[430px] sm:pb-72 md:pb-[243px]">
                 <h2 className='text-3xl sm:text-4xl md:text-5xl font-normal font-Anton lg:leading-[57px] text-[#00141B] text-center'>Slots </h2>
-                <p className="text-[#00141B] font-Inter font-medium text-sm sm:text-base opacity-80 leading-[26px] text-center mt-3 md:mt-4 max-w-[904px] mx-auto">En Exclusive Games, ofrecemos una selección de más de 600 juegos de los principales desarrolladores, como Aristocrat, Amatic, EGT, Novomatic, IGT, Playtech, Igrosoft y Tom Horn. Nuestro equipo trabaja incansablemente para innovar y ampliar nuestra oferta de experiencias, garantizando la máxima seguridad con operaciones protegidas por cifrado SSL de 256 bits.</p>
+                <p className="text-[#00141B] font-Inter font-medium text-sm sm:text-base opacity-80 leading-[26px] text-center mt-3 md:mt-5 max-w-[904px] mx-auto">En Exclusive Games, ofrecemos una selección de más de 600 juegos de los principales desarrolladores, como Aristocrat, Amatic, EGT, Novomatic, IGT, Playtech, Igrosoft y Tom Horn. Nuestro equipo trabaja incansablemente para innovar y ampliar nuestra oferta de experiencias, garantizando la máxima seguridad con operaciones protegidas por cifrado SSL de 256 bits.</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 md:mt-12 lg:mt-[60px] relative gap-5 lg:gap-6">
                     {
                         slotsDataSecond.map((el, index) => (
@@ -89,7 +89,7 @@ const Slots = () => {
                         ))
                     }
                 </div>
-                <div className="relative mx-auto mt-5 sm:mt-7 md:mt-10"><CommonBtn cstm="bg-gradient-to-br to-[#51C8EF] from-[#7AF57A] !border-[0px] text-black" text="Mostrar más" />
+                <div className="relative mx-auto mt-5 sm:mt-7 md:mt-10"><CommonBtn cstm="bg-gradient-to-br to-[#51C8EF] from-[#7AF57A] !border-[0px] !text-black" text="Mostrar más" />
                     <span className="absolute -left-1 -bottom-1"><BtnSvg2 /></span>
                 </div>
             </div>

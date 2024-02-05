@@ -8,7 +8,7 @@ import Crm from '../assets/images/Luxurycrm.webp'
 const Luxury = () => {
     return (
         <div className='relative '>
-            <div className="w-full mt-6 sm:mt-12 md:mt-16 lg:mt-[90px] bg-gradient-to-r from-[#062023] to-[#052025] rounded-2xl border-[0.5px] border-white border-opacity-50">
+            <div className="w-full mt-6 sm:mt-10 md:mt-12 lg:mt-[64px] bg-gradient-to-r from-[#062023] to-[#052025] rounded-2xl border-[0.5px] border-white border-opacity-50">
                 <div className="max-w-[419px] mx-auto gap-6 lg:gap-10 pt-10 md:pt-[46px] pb-8 relative z-30">
                     <div className='flex flex-col items-center px-5 sm:px-0'>
                         <h2 className='md:text-[32px] text-[26px] sm:text-3xl font-normal font-Anton md:leading-[57px] text-white'>Luxury</h2>

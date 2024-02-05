@@ -10,29 +10,29 @@ const Footer = () => {
                         <span><Logo /></span>
                         <p className="mt-3 text-sm sm:text-base font-medium leading-6 text-white font-Inter opacity-80 max-w-[369px]">En Exclusive Games somos un equipo apasionado de personas dedicadas al desarrollo de multiplataformas para juegos de azar</p>
                         <div className="flex items-center gap-3 mt-3 md:mt-6">
-                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C]"><InstaIcon /></span></a>
-                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C]"><FacebookIcon /></span></a>
-                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C]"><TwitterIcon /></span></a>
+                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C] duration-300 hover:bg-gradient-to-r hover:from-[#73ED8D] hover:to-[#5AD2D5] group"><InstaIcon /></span></a>
+                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C] duration-300 hover:bg-gradient-to-r hover:from-[#73ED8D] hover:to-[#5AD2D5] group"><FacebookIcon /></span></a>
+                            <a target="_blank" href="http://instagram.com"><span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#2A2C2C] duration-300 hover:bg-gradient-to-r hover:from-[#73ED8D] hover:to-[#5AD2D5] group"><TwitterIcon /></span></a>
                         </div>
                     </div>
                     <ul className="flex flex-col col-span-1 gap-2 mt-5 sm:gap-3 xs:mt-3 xl:ml-10 xl:col-span-2">
                         <li className="pb-1 text-sm font-bold text-white sm:pb-2 sm:text-base font-Inter">Menú principal</li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Hogar</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Misión</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Tragamonedas</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Por qué elegirnos</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Ofertas</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Hogar</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Misión</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Tragamonedas</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Por qué elegirnos</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Ofertas</Link></li>
                     </ul>
                     <ul className="flex flex-col col-span-1 gap-2 mt-5 sm:gap-3 xs:mt-3 xl:col-span-2">
                         <li className="pb-1 text-sm font-bold text-white sm:pb-2 sm:text-base font-Inter">Atención al cliente</li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">¿Necesitas ayuda?</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">política de privacidad</Link></li>
-                        <li><Link to={"/hogar"} className="text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter">Términos de servicios</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">¿Necesitas ayuda?</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">política de privacidad</Link></li>
+                        <li><Link to={"/hogar"} className="text-sm font-medium text-white navLinks sm:leading-6 sm:text-base opacity-80 font-Inter">Términos de servicios</Link></li>
                     </ul>
                     <ul className="flex flex-col col-span-1 gap-2 mt-5 sm:gap-3 md:mt-3 xl:col-span-2">
                         <li className="pb-1 text-sm font-bold text-white sm:pb-2 sm:text-base font-Inter">Menú principal</li>
-                        <li><a href="mailto:juegosexclusivos@gmail.com" className="flex items-center gap-2 text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter"><span><MailIcon /></span>juegosexclusivos@gmail.com</a></li>
-                        <li><a href="tel:+(101)342-7873" className="flex items-center gap-2 text-sm font-medium text-white sm:leading-6 sm:text-base opacity-80 font-Inter"><span><TelIcon /></span>(101)342-7873</a></li>
+                        <li><a href="mailto:juegosexclusivos@gmail.com" className="flex items-center gap-2 text-sm font-medium text-white duration-300 sm:leading-6 sm:text-base opacity-80 font-Inter hover:opacity-100"><span><MailIcon /></span>juegosexclusivos@gmail.com</a></li>
+                        <li><a href="tel:+(101)342-7873" className="flex items-center gap-2 text-sm font-medium text-white duration-300 sm:leading-6 sm:text-base opacity-80 font-Inter hover:opacity-100"><span><TelIcon /></span>(101)342-7873</a></li>
                     </ul>
                 </div>
             </div>

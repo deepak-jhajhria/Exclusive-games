@@ -6,4 +6,8 @@
     .mobileview {
         @apply max-lg:fixed duration-300 max-lg:w-full max-md:max-w-full max-lg:max-w-[400px] max-lg:flex-col max-lg:bg-[#00141B] bg-cover bg-center max-lg:bg-[url(./assets/images/navbg.png)] top-0 max-md:text-black max-lg:items-center max-lg:justify-center max-lg:min-h-screen max-lg:z-[100]
     }
+
+    .navLinks {
+        @apply relative after:absolute after:w-0 after:bg-white after:h-[2px] after:left-0 after:-bottom-[2px] hover:text-white hover:after:w-full after:duration-300 hover:opacity-100
+    }
 }
