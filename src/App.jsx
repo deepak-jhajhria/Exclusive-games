@@ -8,8 +8,12 @@ import Traga from "./pages/Traga"
 import Footer from "./components/Footer"
 import { useEffect, useState } from "react"
 import Preloder from "./components/Prelodar"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const [screenLoading, setScreenLoading] = useState(false);
   useEffect(() => {
     setScreenLoading(true);
@@ -17,7 +21,7 @@ function App() {
     setTimeout(() => {
       setScreenLoading(false);
       document.body.classList.remove("overflow-hidden")
-    }, 3500);
+    }, 0);
   }, []);
   return (
     <>
