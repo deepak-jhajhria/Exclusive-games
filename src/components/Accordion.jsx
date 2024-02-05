@@ -24,7 +24,7 @@ const Accordion = () => {
                                 <h2 data-aos="fade-up" data-aos-duration="500" className="w-[90%] text-white font-Anton font-normal text-sm xs:text-base sm:text-lg md:text-xl leading-6">{item.title}</h2>
                                 <span data-aos="fade-up" data-aos-duration="500" className="flex items-center justify-center mt-1">{open === index ? (<MinusIcon />) : (<AddIcon />)}</span>
                             </div>
-                            <p data-aos="fade-up" data-aos-duration="500" className={`duration-300 px-3 xs:px-4 md:px-5 font-Inter font-medium text-xs xs:text-sm sm:text-base text-white opacity-80 leading-6 overflow-hidden max-w-[880px]  ${open === index ? "max-h-28 sm:max-h-24 pt-1 xs:pt-2 sm:pt-3 pb-4" : "max-h-0"}`}>{item.content}</p>
+                            <p className={`duration-300 px-3 xs:px-4 md:px-5 font-Inter font-medium text-xs xs:text-sm sm:text-base text-white opacity-80 leading-6 overflow-hidden max-w-[880px]  ${open === index ? "max-h-28 sm:max-h-24 pt-1 xs:pt-2 sm:pt-3 pb-4" : "max-h-0"}`}>{item.content}</p>
                         </div>))
                     }
                 </div>

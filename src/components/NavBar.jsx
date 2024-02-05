@@ -40,6 +40,7 @@ const NavBar = () => {
       document.getElementById("navbar").classList.add("py-4")
     }
   }
+  
   return (
     <nav id="nav" className={`backdrop:blur-xl bg-[rgba(255,255,255,0.10)] navbar w-full z-40 top-0 left-1/2`}>
       <div id="navbar" className="container flex items-center justify-between py-5 max-w-[1140px] relative z-40">
