@@ -69,7 +69,7 @@ const Slots = () => {
                         </div>
                     </div>
                     <span className="absolute top-0 left-[19%] hidden xl:block"><SlotArrow1 /></span>
-                    <span className="absolute top-[50px] right-[19%] hidden xl:block"><SlotArrow2 /></span>
+                    <span className="absolute top-[66px] right-[18%] hidden xl:block"><SlotArrow2 /></span>
                 </div>
             </div>
             <div className="container flex flex-col max-w-[1140px] mt-10 sm:mt-16 md:mt-24 lg:mt-[160px] pb-[430px] sm:pb-72 md:pb-[243px]">
