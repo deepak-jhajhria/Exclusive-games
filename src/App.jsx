@@ -19,8 +19,8 @@ function App() {
   const isLoading = usePreloader();
   return (
     <>
-      {!networkState.online && <Alert className="fixed bottom-0 z-[100]" severity="error">you lost your internet connection</Alert>}
-      {!networkState.online || <Alert className="fixed bottom-0 z-[100]" severity="success">connected success internet</Alert>}
+      {!networkState.online && <Alert className="fixed bottom-0 z-[100] max-md:!hidden" severity="error">you lost your internet connection</Alert>}
+      {!networkState.online || <Alert className="fixed bottom-0 z-[100] max-md:!hidden" severity="success">connected success internet</Alert>}
       {isLoading ? (<Preloder />) : (<div className="bg-[#00141B]">
         <NavBar />
         <Routes>
